@@ -1,10 +1,14 @@
 import React from "react";
-import { Link,useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Coke(){
+
+/** Render coke info from the link on homepage with a link to go
+ * back to homepage.
+*/
+function Coke() {
 
   return (
-    <div>
+    <div className="Coke">
       <h1>Coke</h1>
       <Link to="/">Home</Link>
     </div>
