@@ -4,15 +4,12 @@ import Chips from "./Chips";
 import Coke from "./Coke";
 import CandyBar from "./CandyBar";
 import Home from "./Home";
+import Snacks from "./Snacks";
 
 function RoutesList() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/chips" element={<Chips />} />
-      <Route path="/coke" element={<Coke />} />
-      <Route path="/candy-bars" element={<CandyBar />} />
-
+      <Route path="/snacks/:name" element={<Snacks />} />
     </Routes>
   );
 }

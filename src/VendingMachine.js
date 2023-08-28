@@ -1,13 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Snacks from "./Snacks";
 
-function VendingMachine() {
+const defaultSnacks = ["chips", "coke", "candy-bars"];
+
+function VendingMachine({ snacks = defaultSnacks }) {
+
+
   return (
-    <ul>
-      <li><Link to="/chips">Chips</Link></li>
-      <li><Link to="/coke">Coke</Link></li>
-      <li><Link to="/candy-bars">Candy Bars</Link></li>
-    </ul>
+    <div>
+      <h1>Vending Machine</h1>
+      <ul>
+        {snacks.map(snack => (
+          <li key={snack}>
+            <Link to={`/snacks/${snack}`}>Show me {snack}!</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 
 
