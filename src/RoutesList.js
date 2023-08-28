@@ -3,6 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Chips from "./Chips";
 import Coke from "./Coke";
 import CandyBar from "./CandyBar";
+import Home from "./Home";
 
 function RoutesList() {
   return (
